@@ -1,18 +1,16 @@
 /* global Package */
 
 Package.describe({
-  name: 'matb33:collection-hooks',
+  name: 'pac-reach:meteor-collection-hooks',
   summary: 'Extends Mongo.Collection with before/after hooks for insert/update/remove/find/findOne',
   version: '0.9.0-rc.4',
-  git: 'https://github.com/matb33/meteor-collection-hooks.git'
+  git: 'https://github.com/pac-reach/meteor-collection-hooks.git'
 })
 
 Package.onUse = Package.onUse || Package.on_use    // backwards-compat
 Package.onTest = Package.onTest || Package.on_test // backwards-compat
 
-Package.onUse(function (api, where) {
-  api.addFiles = api.addFiles || api.add_files     // backwards-compat
-
+Package.onUse(function (api, where) { api.addFiles = api.addFiles || api.add_files     // backwards-compat
   if (api.versionsFrom) { // 0.9.0+ litmus test
     api.versionsFrom('1.8')
 
