@@ -14,7 +14,7 @@ Package.onUse(function (api, where) {
   api.addFiles = api.addFiles || api.add_files     // backwards-compat
 
   if (api.versionsFrom) { // 0.9.0+ litmus test
-    api.versionsFrom('1.3.5.1')
+    api.versionsFrom('1.8')
 
     api.use([
       'mongo',
@@ -62,7 +62,7 @@ Package.onTest(function (api) {
   }
 
   api.use([
-    'matb33:collection-hooks',
+    'pac-reach:meteor-collection-hooks',
     'underscore',
     'accounts-base',
     'accounts-password',
