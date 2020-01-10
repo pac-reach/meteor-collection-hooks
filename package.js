@@ -12,7 +12,7 @@ Package.onTest = Package.onTest || Package.on_test // backwards-compat
 
 Package.onUse(function (api, where) { api.addFiles = api.addFiles || api.add_files     // backwards-compat
   if (api.versionsFrom) { // 0.9.0+ litmus test
-    api.versionsFrom('1.8')
+    api.versionsFrom('1.9')
 
     api.use([
       'mongo',
@@ -55,7 +55,7 @@ Package.onTest(function (api) {
   api.addFiles = api.addFiles || api.add_files     // backwards-compat
 
   if (api.versionsFrom) { // 0.9.0+ litmus test
-    api.versionsFrom('1.3.5.1')
+    api.versionsFrom('1.9')
     api.use('mongo')
   }
 
